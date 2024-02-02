@@ -25,10 +25,10 @@ h1 {
 #data-list li {
     background-color: #fff;
     border: 1px solid #ddd;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     padding: 1em;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -47,4 +47,35 @@ h1 {
 .description-content {
     display: none;
     margin-top: 0.5em;
+}
+
+.description-dropdown:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#data-list li strong {
+    color: #007BFF;
+}
+
+.description-content {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    #data-list li {
+        margin-bottom: 0.5em;
+    }
 }
